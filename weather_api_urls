@@ -1,0 +1,14 @@
+Oslo 
+https://api.open-meteo.com/v1/forecast?latitude=59.8937521&longitude=10.6203147&current_weather=true
+
+London
+https://api.open-meteo.com/v1/forecast?latitude=51.5285262&longitude=-0.2664023&current_weather=true
+
+USA
+https://api.open-meteo.com/v1/forecast?latitude=38.8936509&longitude=-77.1704633&current_weather=true
+
+South Korea
+https://api.open-meteo.com/v1/forecast?latitude=37.5647616&longitude=126.8093331&current_weather=true
+
+Berlin
+https://api.open-meteo.com/v1/forecast?latitude=52.5067296&longitude=13.2599283&current_weather=true

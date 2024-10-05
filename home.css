@@ -1,0 +1,165 @@
+/*SECTION*/
+section{
+    width: 100vw;
+    margin: 0 0 3.5rem 0;
+}
+
+#first_section{
+    height: 75vh;
+    color: white;
+    display: flex;
+    background-color: rgb(30,41,53);
+}
+
+#second_section{
+    height: 100%;
+}
+
+#last_section{
+    height: 100%;
+}
+
+/*Second section items*/
+.section_items{
+    transition: 2s;
+    position: relative;
+    opacity: 1;
+    top: 0;
+}
+
+.section_items_hidden{
+    opacity: 0;
+    top: 50px;
+}
+
+/*Containers*/
+#first_section .section_container{
+    max-width: 80vw;
+    min-width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main section:nth-child(n+2) .section_container{
+    max-width: 70vw;
+    min-width: 50vw;
+    margin: 0 auto;
+}
+
+#second_section .section_container > div{
+ display: flex;
+ gap: 50px;
+ justify-content: space-evenly;
+ margin: 0 20px 3.5rem 20px;
+}
+
+#second_section .section_container > div div{
+    align-content: center;
+}
+
+#third_section .section_container{
+    display: flex;
+    justify-content: center;
+}
+
+#last_section .section_container > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 650px;
+    max-width: 700px;
+    min-width: 400px;
+    height: 100px;
+    background-color: rgb(54,129,244);
+    margin: 0 auto;
+    color: white;
+    border-radius: 20px;
+}
+
+/*Headers*/
+h2{
+    text-align: center;
+    margin: 0 auto 3.5rem auto;
+}
+
+/*Paragraphs*/
+.section_container p{
+    max-width: 400px;
+}
+
+#first_section p{
+    margin-bottom: 70px;
+}
+
+#second_section p{
+    margin-bottom: 70px;
+}
+
+/*Blockqoutes*/
+#third_section .section_container div{
+    max-width: 55%;
+    min-width: 30%;
+    margin: 2rem 0;
+}
+
+blockquote{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#third_section .section_container div p{
+    font-weight: bold;
+    float: right;
+}
+
+/*images*/
+img{
+    border-radius: 20px;
+}
+
+section:first-of-type img{
+    width: 600px;
+    height: 300px;
+}
+
+#second_section img {
+    width: 400px;
+    height: 500px;
+}
+
+/*Button*/
+.second_section_button{
+    color: black;
+    padding-left: 0px;
+    margin-top: 20px;
+    border-radius: 0px;
+    transition: 0.5s;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px;
+    border-color: transparent;
+    border-style: solid;
+    position: relative;
+    bottom: 0px;
+}
+
+.second_section_button:hover{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px;
+    border-color: black;
+    border-style: solid;
+    bottom: 5px;
+}
+
+
+.second_section_button > span{
+    position: relative;
+    top: 6.5px;
+    left: 3px;
+}

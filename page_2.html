@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblig 1 - Page 2</title>
+    <script defer src="page_2.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="page_2.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="white_logo.svg">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page_2.html">Page 2</a></li>
+                    <li><a href="page_3.html">Page 3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- First section -->
+        <section id="first_section">
+            <div class="section_container">
+                <div>
+                    <h1>Posts</h1>
+                    <p>Check out our posts. Keep scrolling down to load new posts.</p>
+                </div>
+            </div>
+        </section>
+        <!--- Second section-->
+        <section id="second_section">
+            <div class="section_container">
+                <h2>Posts</h2>
+                <div id="post_container">
+                </div>
+                <div id="loading" class="hidden">Loading
+                    <svg id="first_dot" width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="3" fill="black" />
+                    </svg>
+                    <svg id="second_dot" width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="3" fill="black" />
+                    </svg>
+                    <svg id="third_dot" width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="3" fill="black" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <small>Copyright &#169;</small>
+        </footer>
+    </main>
+</body>
+</html>

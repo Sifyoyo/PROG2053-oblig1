@@ -1,0 +1,115 @@
+/*SECTION*/
+#first_section{
+    height: 75vh;
+    color: white;
+    display: flex;
+    background-color: rgb(30,41,53);
+}
+
+#second_section{
+    margin-bottom: 150px;
+}
+
+/*Containers*/
+#first_section .section_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#post_container{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto 70px auto;
+}
+
+/*Posts*/
+.post{
+    color: black;
+    flex: 1 0 calc(33.33% - 50px);
+    box-sizing: border-box;
+    padding: 20px;
+    height: 400px;
+    max-height: 400px;
+    min-height: 300px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) -25%, rgba(30,41,53,1) 100%);
+    transition: 1s;
+    background-size: 100% 200%;
+    transform: translate(0px, 0px);
+    /*
+    width: 240px;
+    max-width: 240px;
+    min-width: 200px;
+*/
+}
+
+.post:hover{
+    color: white;
+    background-position: 0 100%;
+    transform: translate(0px, -5px);
+    box-shadow: 0px 5px 5px rgb(71, 71, 71);
+}
+
+/*Headers*/
+#second_section .section_container h2{
+    text-align: center;
+    margin: 3.5rem auto;
+}
+
+/*Loading*/
+.hidden{
+    display: none;
+}
+
+#loading{
+    text-align: center;
+}
+
+#loading svg{
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/*Dot animations*/
+@keyframes dotAnim_1{
+    0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -10px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+/*Dot animations*/
+@keyframes dotAnim_2{
+    0% {transform: translate(0px, 0px);}
+    20% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -10px);}
+    65% {transform: translate(0px, -10px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+/*Dot animations*/
+@keyframes dotAnim_3{
+    0% {transform: translate(0px, 0px);}
+    30% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -10px);}
+    75% {transform: translate(0px, -10px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+
+#first_dot{
+    animation-name: dotAnim_1;
+}
+
+#second_dot{
+    animation-name: dotAnim_2;
+}
+
+#third_dot{
+    animation-name: dotAnim_3;
+}
+
